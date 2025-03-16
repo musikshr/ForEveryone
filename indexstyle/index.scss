@@ -710,12 +710,12 @@ footer{
         .text__cron{
             display: flex;
             column-gap: 15px;
-            color: #999999;
+            color: #999999; 
             &:hover{
                 color: #fff;
             }
             .logo__cron{
-                .logo{
+                .logo{ 
                     display: flex;
                     justify-content: space-between;
                     margin-bottom: 4px;

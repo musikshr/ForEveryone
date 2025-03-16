@@ -115,7 +115,7 @@ mainBtn.addEventListener('click', () => {
         behavior: 'smooth'
     })
 })
-
+ 
 const searchHeader = document.querySelector('.header__middle');
 const header = document.querySelector('header');
 const headerHeight = header.offsetHeight;
