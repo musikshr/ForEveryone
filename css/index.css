@@ -329,7 +329,7 @@ body {
 }
 
 main {
-  font-family: "Ubuntu", monospace;
+  font-family: "Ubuntu", sans-serif;
 }
 main button {
   border: none;
@@ -358,9 +358,6 @@ main .container .info__current-page .area__info .path__page {
 main .container .info__current-page .area__info .path__page span:hover {
   color: #98C22A;
   cursor: pointer;
-}
-main .container .info__current-page p {
-  font-family: "Ubuntu";
 }
 main .container .info__current-page .str1 {
   position: absolute;
@@ -458,30 +455,32 @@ main .search__panel .wrapper__input button {
 }
 main .filter__panel {
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
-  width: 1500px;
+  max-width: 1500px;
   height: 60px;
   margin-bottom: 24px;
+  border: 1px solid #ECECEC;
 }
-main .filter__panel .btn {
-  padding: 0 30px;
-  line-height: 60px;
+main .filter__panel .btns {
+  display: flex;
+}
+main .filter__panel .btns .btn {
   font-size: 11px;
   color: #333333;
-  border: 1px solid #ECECEC;
-  border-right: none;
+  border-right: 1px solid #ECECEC;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
-main .filter__panel .btn:hover {
+main .filter__panel .btns .btn p {
+  margin: 0 30px;
+}
+main .filter__panel .btns .btn:hover {
   color: #98C22A;
 }
-main .filter__panel .active {
+main .filter__panel .btns .active {
   background-color: #ECECEC;
-}
-main .filter__panel .empty {
-  width: 1005px;
-  height: 60px;
-  border: 1px solid #ECECEC;
 }
 main .conclusion__of__search__and__filter {
   display: flex;

@@ -303,7 +303,7 @@ body{
     }
 }
 main{
-    font-family: 'Ubuntu', monospace;
+    font-family: 'Ubuntu', sans-serif;
     button{
         border: none;
     }
@@ -334,9 +334,6 @@ main{
                     cursor: pointer;
                 }
             }
-        }
-        p{
-            font-family: "Ubuntu";
         }
         .str1{
             position: absolute;
@@ -435,29 +432,31 @@ main{
     }
     .filter__panel{
         display: flex;
+        justify-content: space-between;
         margin: 0 auto;
-        width: 1500px;
+        max-width: 1500px;
         height: 60px;
         margin-bottom: 24px;
-        .btn{
-            padding: 0 30px;
-            line-height: 60px;
-            font-size: 11px;
-            color: #333333;
-            border: 1px solid #ECECEC;
-            border-right: none;
-            cursor: pointer;
-            &:hover{
-                color: #98C22A;
+        border: 1px solid #ECECEC;
+        .btns{
+            display: flex;
+            .btn{
+                font-size: 11px;
+                color: #333333;
+                border-right: 1px solid #ECECEC;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                p{
+                    margin: 0 30px;
+                }
+                &:hover{
+                    color: #98C22A;
+                }
             }
-        }
-        .active{
-            background-color: #ECECEC;
-        }
-        .empty{
-            width: 1005px;
-            height: 60px;
-            border: 1px solid #ECECEC;
+            .active{
+                background-color: #ECECEC;
+            }
         }
     }
     .conclusion__of__search__and__filter{
