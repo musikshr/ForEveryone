@@ -2,58 +2,78 @@ const events = document.querySelector('.events');
 
 const elements = {
     item1: {
-        img: 'https://s3-alpha-sig.figma.com/img/7525/a9fe/547e3078621771f8f2e9c5ddbee2f6e5?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fqX-1lTb5SbKFAbDUhh7sHCLZUgf0jpp-mKYrWaHB4P3SzuA5HeQp0eDZ2A1U2Kf8OHkQMDegtz3jhj6ecxnzhrKjQ3uuf~sf5qoX5Udm4Z36E9rseJLr3hWuJ30O7ARWM-nO1rOLN1iyXdh8oeaSxjem3V4eAAo9sVKrAYPxE38B3d9OTxowElImrv3aV~bw6Zc2j7aWdl8PXXVg--cEmDCzXoZ6zdP1lM2TFGVihc44IovfPjgrZhfqgIaCNOs1Us26lhlnK9JhJojPwaQumzvE9yg3yu7C3cAhLEof7qtEW4iFN~Mo~IO1YZseX-x1pV-DtKYRrZ4nN2GuoAoSw__',
-        name: 'Мототур в Гуниб',
-        number__data: '1',
-        month__data: 'Мая',
+        img: 'https://s3-alpha-sig.figma.com/img/bc92/128a/2ea4927f9ac4f6782ec5faa861812137?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=AaovCsnDt50vkOviXOc08Yk2u1ZSI~hr5Je5NwFxxJfe-MpkJVfaczPQwGYRyxfqpp7ar9NlXM7gxNyRWSbdXUVsGS8uuLoy93pHHal9GeygtvX5OxbGds0OsOIeDKmtIWsrM~ebqcmAypB0bn765VCrS7fNvPpKqtlfrl-vSsxKBrmLZeCUmw-E0iDKXyVByyrgqU9sGbjB3vCofm7ztY5-k9p5sPT9wNzVSOV9LgJJpjIga8ZZAyQUZohCyN0DN1H3Zz30fcVQC02fK6XNyCUpvGn8t5QvU4Six1Y7vWd4PyHdYWTB2005aAcrGuTB~0ZdSUr5RgaXpW1ENGfbDg__',
+        name: 'Тур в Гуниб',
+        number__data: '25',
+        month__data: 'Апреля',
         year__data: '2025',
-        gids: 'Заур Мужаидов',
-        gids2: 'Рауф Магомедов',
-        text: 'Приглашаем Вас окунуться в атмосферу свободы, эндуро, горных пейзажей и гастрономии!'
+        time__start: '19:30',
+        time__end: '21:15',
+        text: 'Что общего в йоге, беге и горных походах? Поговорим про топ ошибок: почему люди сходятс дистанции, травмируются и выгорают. Встреча пройдёт в формате лекции, дискуссии и общей практики'
     },
     item2: {
-        img: 'https://s3-alpha-sig.figma.com/img/fe61/7eff/25bcd6a3e1fd3de7af9a6918e16446ae?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=e4zVmVC-h1iKB8ZOrycYMTqh~eP7SqZhAzihGIN2Pr2iDb4aKBXFkgI6-jVW1lXsIvIz5EvtRtdi~ug2h91Z9bdy0DkUbAgre9UVsTxtRMTMIhidflouGv44a6EggzsBrsHGYteXIGY44uN-S8OCnhahJQYgTBCg8KPoptO3dTyGGq3BO59RJ8RUAXZYad~2kytirvHYWov0qOwazHViCUdftgFjUTkdxMEgMwpTbQPFZ~KrSGTemxfLUDGMInPJRc1qKvbho73lGqA8GWLPcE8aTNK0gFybcQ4byvg526bXhMVaeDx-STGkADKtVNnm-UxNZBOwL2BwJghe1f6bBg__',
-        name: 'Детский тур в Тарки',
-        number__data: '20',
+        img: 'https://s3-alpha-sig.figma.com/img/bc92/128a/2ea4927f9ac4f6782ec5faa861812137?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=AaovCsnDt50vkOviXOc08Yk2u1ZSI~hr5Je5NwFxxJfe-MpkJVfaczPQwGYRyxfqpp7ar9NlXM7gxNyRWSbdXUVsGS8uuLoy93pHHal9GeygtvX5OxbGds0OsOIeDKmtIWsrM~ebqcmAypB0bn765VCrS7fNvPpKqtlfrl-vSsxKBrmLZeCUmw-E0iDKXyVByyrgqU9sGbjB3vCofm7ztY5-k9p5sPT9wNzVSOV9LgJJpjIga8ZZAyQUZohCyN0DN1H3Zz30fcVQC02fK6XNyCUpvGn8t5QvU4Six1Y7vWd4PyHdYWTB2005aAcrGuTB~0ZdSUr5RgaXpW1ENGfbDg__',
+        name: 'Тур в Гуниб',
+        number__data: '25',
         month__data: 'Апреля',
         year__data: '2025',
-        gids: 'Заур Мужаидов',
-        gids2: '',
-        text: ''
+        time__start: '19:30',
+        time__end: '21:15',
+        text: 'Что общего в йоге, беге и горных походах? Поговорим про топ ошибок: почему люди сходятс дистанции, травмируются и выгорают. Встреча пройдёт в формате лекции, дискуссии и общей практики'
     },
     item3: {
-        img: 'https://s3-alpha-sig.figma.com/img/2adb/4d6e/d3a4dc4948f221cba9bd099f5052bacb?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hEoDmneuvnxqDHqqb3yVaKlMld0Qsqx3rNjI0NZ9AIY5k7SXOvwXcBJRY0QUXD2ya6sRF-35bkVVgk-TTy7GbNElq-a6oT1RKpZJCBAeqJSdTtHAuX7f1tE-pxev2yddm41vbfTIFrHGlWPQJHkJTAdaKSqRNYTI9A3rvCWxgqvnRCS2ZFy~DByvKLpV5R3xElxmDAWpk~VklLmN7roneVQLfMPztTy4p7YXzatHMZVomOLK8YsUNMR9OewnQlVIve-A8Epc48Dylepj6kGvjfwmo1351mjyFPovhNY2e2oh-m2X8c0anlDdFcBzBPvzUuZv6kwe8kohQsH09PlSRQ__',
-        name: 'Трехдневный тур по Юждагу',
-        number__data: '11',
+        img: 'https://s3-alpha-sig.figma.com/img/bc92/128a/2ea4927f9ac4f6782ec5faa861812137?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=AaovCsnDt50vkOviXOc08Yk2u1ZSI~hr5Je5NwFxxJfe-MpkJVfaczPQwGYRyxfqpp7ar9NlXM7gxNyRWSbdXUVsGS8uuLoy93pHHal9GeygtvX5OxbGds0OsOIeDKmtIWsrM~ebqcmAypB0bn765VCrS7fNvPpKqtlfrl-vSsxKBrmLZeCUmw-E0iDKXyVByyrgqU9sGbjB3vCofm7ztY5-k9p5sPT9wNzVSOV9LgJJpjIga8ZZAyQUZohCyN0DN1H3Zz30fcVQC02fK6XNyCUpvGn8t5QvU4Six1Y7vWd4PyHdYWTB2005aAcrGuTB~0ZdSUr5RgaXpW1ENGfbDg__',
+        name: 'Тур в Гуниб',
+        number__data: '25',
         month__data: 'Апреля',
         year__data: '2025',
-        gids: 'Leki Travel',
-        gids2: '',
-        text: ''
+        time__start: '19:30',
+        time__end: '21:15',
+        text: 'Что общего в йоге, беге и горных походах? Поговорим про топ ошибок: почему люди сходятс дистанции, травмируются и выгорают. Встреча пройдёт в формате лекции, дискуссии и общей практики'
     },
     item4: {
-        img: 'https://s3-alpha-sig.figma.com/img/1a13/d3ce/6b75b849a056bf8dfe93e92b009e9414?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HxBd5SSHUzwCHfHE5wxL4dx~5W082EMMTby-6weahlF~26XxKjDbEv43GwAzN6d3voXhdEgTUAsX19o2PMg9TgllQEispitatgCzvv53fShNhN-RFzuZ3F6EuSXh9-MPG9DhvgQBQ8A568fJaYec80xqFpfJ2Rbndl0f0mFDMFp0Hc6B3p1hzAzCGgY0lVUpEuoMToWR7pBoxqZQBzCaCMCbaUL2Pki6BgiFoysgnTe5SfB9QoK2U4lBAJqOInQpdedmIgqnieby4wAvVxkJ5-Li~NXm7NAkDewmbwy8FNOp4zf0YSvsQLGC5FPkmWw1wHVtIc~Xbfq5q9-3srsyYQ__',
-        name: 'Фестиваль ледолазания "Матлас 2025"',
-        number__data: '20',
-        month__data: 'Февраля',
+        img: 'https://s3-alpha-sig.figma.com/img/bc92/128a/2ea4927f9ac4f6782ec5faa861812137?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=AaovCsnDt50vkOviXOc08Yk2u1ZSI~hr5Je5NwFxxJfe-MpkJVfaczPQwGYRyxfqpp7ar9NlXM7gxNyRWSbdXUVsGS8uuLoy93pHHal9GeygtvX5OxbGds0OsOIeDKmtIWsrM~ebqcmAypB0bn765VCrS7fNvPpKqtlfrl-vSsxKBrmLZeCUmw-E0iDKXyVByyrgqU9sGbjB3vCofm7ztY5-k9p5sPT9wNzVSOV9LgJJpjIga8ZZAyQUZohCyN0DN1H3Zz30fcVQC02fK6XNyCUpvGn8t5QvU4Six1Y7vWd4PyHdYWTB2005aAcrGuTB~0ZdSUr5RgaXpW1ENGfbDg__',
+        name: 'Тур в Гуниб',
+        number__data: '25',
+        month__data: 'Апреля',
         year__data: '2025',
-        gids: '',
-        gids2: '',
-        text: 'Фестиваль ледолазания "Матлас 2025"'
+        time__start: '19:30',
+        time__end: '21:15',
+        text: 'Что общего в йоге, беге и горных походах? Поговорим про топ ошибок: почему люди сходятс дистанции, травмируются и выгорают. Встреча пройдёт в формате лекции, дискуссии и общей практики'
     },
     item5: {
-        img: 'https://s3-alpha-sig.figma.com/img/215c/a39b/4165bdf87d5b05cdbac6fbd6380ea761?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=pp69sfcfKJXkeK4FXsBGRR0jBZFFGE3T5AM~~ebqzOkhG-YYI5y8LGytJefMayyOCxnYnGDt0XAZ3mlNqBYc6lCKrmYcws3L0Ar9DnlBV~IqvyYlvL5nl9y4zpst5yw4DUYzUKgmVcmHt7xR5RNQTx83VFCtLZG-AUQhIwoQVRb9DDbEOdrJ8aVChYJwQdYSVuKjRMlkB4medXJz9oCz9--IbjpTXiGny0vGDtehp0WgK7pC3yH9qk0mmirBM6AewdoXNuAwh49~lH~72HC6FEeojcTg4J8VlYzheY2uthLl4TX~Ry5XWmpFqTXa1KkaJ6E~G-3hECd9gHytj5p70g__',
-        name: 'Трекинг к базовому лагерю Эвереста: сколько стоит, когда лучше идти',
-        number__data: '2',
-        month__data: 'Февраля',
+        img: 'https://s3-alpha-sig.figma.com/img/bc92/128a/2ea4927f9ac4f6782ec5faa861812137?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=AaovCsnDt50vkOviXOc08Yk2u1ZSI~hr5Je5NwFxxJfe-MpkJVfaczPQwGYRyxfqpp7ar9NlXM7gxNyRWSbdXUVsGS8uuLoy93pHHal9GeygtvX5OxbGds0OsOIeDKmtIWsrM~ebqcmAypB0bn765VCrS7fNvPpKqtlfrl-vSsxKBrmLZeCUmw-E0iDKXyVByyrgqU9sGbjB3vCofm7ztY5-k9p5sPT9wNzVSOV9LgJJpjIga8ZZAyQUZohCyN0DN1H3Zz30fcVQC02fK6XNyCUpvGn8t5QvU4Six1Y7vWd4PyHdYWTB2005aAcrGuTB~0ZdSUr5RgaXpW1ENGfbDg__',
+        name: 'Тур в Гуниб',
+        number__data: '25',
+        month__data: 'Апреля',
         year__data: '2025',
-        gids: '',
-        gids2: '',
-        text: ''
-    }
+        time__start: '19:30',
+        time__end: '21:15',
+        text: 'Что общего в йоге, беге и горных походах? Поговорим про топ ошибок: почему люди сходятс дистанции, травмируются и выгорают. Встреча пройдёт в формате лекции, дискуссии и общей практики'
+    },
+    item6: {
+        img: 'https://s3-alpha-sig.figma.com/img/bc92/128a/2ea4927f9ac4f6782ec5faa861812137?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=AaovCsnDt50vkOviXOc08Yk2u1ZSI~hr5Je5NwFxxJfe-MpkJVfaczPQwGYRyxfqpp7ar9NlXM7gxNyRWSbdXUVsGS8uuLoy93pHHal9GeygtvX5OxbGds0OsOIeDKmtIWsrM~ebqcmAypB0bn765VCrS7fNvPpKqtlfrl-vSsxKBrmLZeCUmw-E0iDKXyVByyrgqU9sGbjB3vCofm7ztY5-k9p5sPT9wNzVSOV9LgJJpjIga8ZZAyQUZohCyN0DN1H3Zz30fcVQC02fK6XNyCUpvGn8t5QvU4Six1Y7vWd4PyHdYWTB2005aAcrGuTB~0ZdSUr5RgaXpW1ENGfbDg__',
+        name: 'Тур в Гуниб',
+        number__data: '25',
+        month__data: 'Апреля',
+        year__data: '2025',
+        time__start: '19:30',
+        time__end: '21:15',
+        text: 'Что общего в йоге, беге и горных походах? Поговорим про топ ошибок: почему люди сходятс дистанции, травмируются и выгорают. Встреча пройдёт в формате лекции, дискуссии и общей практики'
+    },
+    item7: {
+        img: 'https://s3-alpha-sig.figma.com/img/bc92/128a/2ea4927f9ac4f6782ec5faa861812137?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=AaovCsnDt50vkOviXOc08Yk2u1ZSI~hr5Je5NwFxxJfe-MpkJVfaczPQwGYRyxfqpp7ar9NlXM7gxNyRWSbdXUVsGS8uuLoy93pHHal9GeygtvX5OxbGds0OsOIeDKmtIWsrM~ebqcmAypB0bn765VCrS7fNvPpKqtlfrl-vSsxKBrmLZeCUmw-E0iDKXyVByyrgqU9sGbjB3vCofm7ztY5-k9p5sPT9wNzVSOV9LgJJpjIga8ZZAyQUZohCyN0DN1H3Zz30fcVQC02fK6XNyCUpvGn8t5QvU4Six1Y7vWd4PyHdYWTB2005aAcrGuTB~0ZdSUr5RgaXpW1ENGfbDg__',
+        name: 'Тур в Гуниб',
+        number__data: '25',
+        month__data: 'Апреля',
+        year__data: '2025',
+        time__start: '19:30',
+        time__end: '21:15',
+        text: 'Что общего в йоге, беге и горных походах? Поговорим про топ ошибок: почему люди сходятс дистанции, травмируются и выгорают. Встреча пройдёт в формате лекции, дискуссии и общей практики'
+    },
 }
 
-for ( var key in elements){
+for (var key in elements) {
     key = elements[key];
     const div = document.createElement('div');
     div.classList.add('event');
@@ -66,33 +86,42 @@ for ( var key in elements){
                             </a>
                         </div>
                         <div class="cont__info">
-                            <div class="data">
-                                <span class="number__data">${key.number__data}</span>
-                                <span class="month__data">${key.month__data}</span>
-                                <span class="year__data">${key.year__data}</span>
-                            </div>
                             <div class="name__of__event">
                                 <a href="#">
                                     <p>${key.name}</p>
                                 </a>
                             </div>
                             <div class="text">
-                                <p>${key.text}
-                                </p>
+                                <p>${key.text}</p>
                             </div>
-                            <div class="gids">
-                                <span>Гиды:</span>
-                                <span class="name__of__gid"><a href="#">${key.gids}</a></span>
-                                
-                                <span class="name__of__gid"><a href="#">${key.gids2}</a></span>
+                            <div class="time__and__data">
+                                <div class="time">
+                                    <div class="svg__clock">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 18.5C12.1217 18.5 14.1566 17.6571 15.6569 16.1569C17.1571 14.6566 18 12.6217 18 10.5C18 8.37827 17.1571 6.34344 15.6569 4.84315C14.1566 3.34285 12.1217 2.5 10 2.5C7.87827 2.5 5.84344 3.34285 4.34315 4.84315C2.84285 6.34344 2 8.37827 2 10.5C2 12.6217 2.84285 14.6566 4.34315 16.1569C5.84344 17.6571 7.87827 18.5 10 18.5ZM10 0.5C11.3132 0.5 12.6136 0.758658 13.8268 1.2612C15.0401 1.76375 16.1425 2.50035 17.0711 3.42893C17.9997 4.35752 18.7362 5.45991 19.2388 6.67317C19.7413 7.88642 20 9.18678 20 10.5C20 13.1522 18.9464 15.6957 17.0711 17.5711C15.1957 19.4464 12.6522 20.5 10 20.5C4.47 20.5 0 16 0 10.5C0 7.84784 1.05357 5.3043 2.92893 3.42893C4.8043 1.55357 7.34784 0.5 10 0.5ZM10.5 5.5V10.75L15 13.42L14.25 14.65L9 11.5V5.5H10.5Z" fill="black" fill-opacity="0.5"/>
+                                        </svg>
+                                    </div>
+                                    <span class="time__start time__time">${key.time__start}</span>
+                                    <span class="time__end time__time">${key.time__end}</span>
+                                </div>
+                                <div class="data">
+                                    <div class="svg__calendar">
+                                        <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 11.5H14V16.5H9V11.5ZM16 2.5H15V0.5H13V2.5H5V0.5H3V2.5H2C0.9 2.5 0 3.4 0 4.5V18.5C0 19.6 0.9 20.5 2 20.5H16C17.1 20.5 18 19.6 18 18.5V4.5C18 3.4 17.1 2.5 16 2.5ZM16 4.5V6.5H2V4.5H16ZM2 18.5V8.5H16V18.5H2Z" fill="black" fill-opacity="0.5"/>
+                                        </svg>
+                                    </div>
+                                    <div class="data__data">
+                                        <span class="number__data">${key.number__data}</span>
+                                    <span class="month__data">${key.month__data}</span>
+                                    <span class="year__data">${key.year__data}</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <a href = "#" class="link__arrow">
-                        <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path id='arrow' fill-rule="evenodd" clip-rule="evenodd"
-                                d="M12.6301 6.01001L8.61011 10.026C8.42274 10.2123 8.16934 10.3168 7.90515 10.3168C7.64097 10.3168 7.38756 10.2123 7.2002 10.026C7.10792 9.93427 7.03459 9.82521 6.98462 9.70508C6.93465 9.58494 6.90894 9.4561 6.90894 9.32599C6.90894 9.19588 6.93465 9.06703 6.98462 8.9469C7.03459 8.82677 7.10792 8.7177 7.2002 8.62598L9.52014 6.315H1.91016C1.64494 6.315 1.39054 6.20963 1.203 6.02209C1.01547 5.83456 0.910156 5.58022 0.910156 5.315C0.910156 5.04979 1.01547 4.79545 1.203 4.60791C1.39054 4.42037 1.64494 4.315 1.91016 4.315H9.52014L7.2002 1.99799C7.10816 1.90612 7.03505 1.79699 6.98523 1.67688C6.93541 1.55677 6.90979 1.42801 6.90979 1.29797C6.90979 1.16794 6.93541 1.03918 6.98523 0.919067C7.03505 0.798953 7.10816 0.689884 7.2002 0.598022C7.38756 0.411772 7.64097 0.30719 7.90515 0.30719C8.16934 0.30719 8.42274 0.411772 8.61011 0.598022L12.6301 4.61499C12.815 4.80006 12.9188 5.05093 12.9188 5.3125C12.9188 5.57407 12.815 5.82494 12.6301 6.01001Z"
-                                fill="#999999" />
+                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.1 15.55L10 15.65L9.89 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 3 9.07 4.36H10.93C11.46 3 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55ZM14.5 0C12.76 0 11.09 0.81 10 2.08C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.41 0 5.5C0 9.27 3.4 12.36 8.55 17.03L10 18.35L11.45 17.03C16.6 12.36 20 9.27 20 5.5C20 2.41 17.58 0 14.5 0Z" fill="#777777"/>
                         </svg>
                     </a>`;
     events.append(div);
@@ -101,7 +130,7 @@ for ( var key in elements){
 const mainBtn = document.querySelector('.main__btn');
 
 document.addEventListener('scroll', () => {
-    if(scrollY >= 200){
+    if (scrollY >= 200) {
         mainBtn.classList.remove('hidden');
     } else {
         mainBtn.classList.add('hidden');
@@ -115,7 +144,7 @@ mainBtn.addEventListener('click', () => {
         behavior: 'smooth'
     })
 })
- 
+
 const searchHeader = document.querySelector('.header__middle');
 const header = document.querySelector('header');
 const headerHeight = header.offsetHeight;
@@ -123,7 +152,7 @@ const searchHeaderHeight = searchHeader.offsetHeight;
 
 window.addEventListener('scroll', () => {
     let scrollDistance = window.scrollY;
-    if (scrollDistance >= headerHeight ){
+    if (scrollDistance >= headerHeight) {
         searchHeader.classList.add('header--fixed');
         header.style.marginTop = `${searchHeaderHeight}px`;
     } else {
